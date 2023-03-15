@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Responsive Registaration Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" lang="javascript" src="./responsiveRegistaration.js"></script>
+    </head>
+       
+    <body>
+        <div class="w3-bar w3-white w3-border-bottom w3-xlarge w3-center">
+            <a href="index.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Home</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
+          </div>
+          <div class="container" style="padding-left: 50px;">
+            <h1> Registration Form</h1>
+          </div>
+        
+        <div class="container" style="padding-left:50px;">
+            <div class="row">
+                <div class="col-10" style="padding-top: 2%; text-decoration: underline overline;">
+                    <label for="fname"><strong>First Name:</strong></label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10" style="padding-top: 2%; text-decoration: underline overline;">
+                    <label for="lname"><strong>Last Name:</strong></label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10" style="padding-top: 2%; text-decoration: underline overline;">
+                    <label for="email"><strong>Email:</strong></label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" name="email" placeholder="it should contain @,.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10" style="padding-top: 2%; text-decoration: underline overline;">
+                    <label for="mobile"><strong>Mobile:</strong></label>
+                </div>
+                <div class="col-90">
+                    <input type="tel" id="mobile" name="mobile" placeholder="only 7 digits are allowed">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10" style="padding-top: 2%; text-decoration: underline overline;">
+                    <label for="gender" required><strong>Gender:</strong></label>
+                </div>
+                <div class="col-90">
+                    <input type="radio" id="male" name="gender" value="male"/>Male
+                    <input type="radio" id="female" name="gender" value="female"/>Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10" style="padding-top: 2%; text-decoration: underline overline;">
+                    <label for="dob"><strong>Date of Birth:</strong></label>
+                </div>
+                <div class="col-90">
+                    <input type="Date" id="dob" name="dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10" style="padding-top: 2%; text-decoration: underline overline;">
+                    <label for="address"> <strong>Address:</strong></label>
+                </div>
+                <div class="col-90">
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10" style="padding-top: 2%; text-decoration: underline overline;">
+                    <label for="city"><strong>City:</strong></label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="city" name="city" maxlength="10">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10" style="padding-top: 2%; text-decoration: underline overline;">
+                    <label for="postalcode"><strong>Area Postal:</strong></label>
+                </div>
+                <div class="col-90">
+                    <input type="number" id="pin" name="pin" maxlength="6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10" style="padding-top: 2%; text-decoration: underline overline;">
+                    <label for="state"><strong>State:</strong></label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="state" name="state">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10" style="padding-top: 2%; text-decoration: underline overline;">
+                    <label for="occupation" required ><strong>Occupation:</strong> </label>
+                </div>
+                <div class="col-90">
+                    <select name="occupation" id="Occupation">
+                        <option value=" "> Select Occupation:</option>
+                        <option value="Industry"> Industry</option>
+                        <option value="Position"> Position</option>
+                        <option value="Department"> Department</option>
+                        <option value="Company Address"> Company Address</option>
+                        <option value="Company Tel#"> Company Tel#</option><br>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10" style="padding-top: 2%; text-decoration: underline overline;">
+                    <label for="specialization" ><strong>Specialization:</strong></label>
+                </div>
+                <div class="col-90">
+                    <input type="checkbox" class="specialization" id="cs" name="specialization[]" value="Computer Science">Computer Science<br/>
+                    <input type="checkbox" class="specialization" id="it" name="specialization[]" value="Information Technology">Information Technology<br/>
+                    <input type="checkbox" class="specialization" id="ca" name="specialization[]" value="Computer Architecture">Computer Architecture<br/>
+                    <input type="checkbox" class="specialization" id="tc" name="specialization[]" value="Tele Communication">Tele Communication<br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10" style="padding-top: 2%; text-decoration: underline overline;">
+                    <label for="password"><strong>Password:</strong></label>
+                </div>
+                <div class="col-90">
+                    <input type="password" id="password" name="password" maxlength="8">
+                </div>
+            </div>
+            <div class="row" style="padding-top: 2%;">
+                <a href="login.html"><input type="submit" value="Registered" onclick="SaveMemberDetails()"></a>
+                <br<br>
+            </div>
+            <div><a> </a></div>  <br><br><br>
+        </div>  
+    </body>
+</html>
